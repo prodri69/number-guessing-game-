@@ -1,1 +1,8 @@
 
+PSQL\
+psql --username=freecodecamp --dbname=postgres
+CREATE DATABASE number_guess;
+\c number_guess
+
+CREATE TABLE users(user_id, SERIAL PRIMARY KEY);
+ALTER TABLE users ADD COLUMN username VARCHAR (20) NOT NULL UNIQUE;
